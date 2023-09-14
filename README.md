@@ -1,6 +1,9 @@
 # SPA Universe
 
 The goal of the project is to learn about advanced Javascript.
+
+https://github.com/RafaFullenbach/universe/assets/63618616/0c5f7901-5ff8-4a31-8496-9e1d359162df
+
 ## Apprenticeship
 
 - SPA concepts;
