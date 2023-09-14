@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+
+  --text-color: hsl(240, 9%, 89%);
+  --button-bg-transparent: hsla(0, 0%, 100%, 0);
+  --button-color: hsl(0, 0%, 100%);
+  --button-hover-color: hsl(194, 97%, 31%);
+  --link-unfocused: hsl(240, 7%, 78%);
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  background-position: center;
+  background-attachment: fixed;
+
+  width: 100vw;
+  height: calc(100vh * 1440 / 2560);
+}
+
+body.bg-home{
+  background-image: url("./assets/mountains-universe-1.png");
+}
+
+body.bg-universe{
+  background-image: url("./assets/mountains-universe-2.png");
+}
+
+body.bg-exploration{
+  background-image: url("./assets/mountains-universe-3.png");
+}
+
+nav {
+  margin-top: 4rem;
+  margin-left: 7.2rem;
+
+  display: flex;
+  gap: 4.8rem;
+  align-items: center;
+}
+
+a.clicked {
+  color: var(--button-color);
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+a {
+  font-size: 2.2rem;
+  color: var(--link-unfocused);
+
+  text-decoration: none;
+}
+
+h1 {
+  color: var(--text-color);
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+p {
+  max-width: 64.8rem;
+
+  font-size: 1.8rem;
+  color: var(--text-color);
+  line-height: 2.9rem;
+
+  margin-top: 1.6rem;
+}
+
+button {
+  background-color: var(--button-bg-transparent);
+
+  color: var(--button-color);
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+
+  margin-top: 2.4rem;
+  border: 2px solid var(--button-color);
+  border-radius: 0.5rem;
+  padding: 1.2rem 3.2rem;
+
+  cursor: pointer;
+}
+
+button:hover {
+  color: var(--button-hover-color);
+  background-color: var(--button-color);
+}
+
+.main {
+  display: grid;
+  height: 70vh;
+  place-content: center;
+}
+
+.section {
+  margin-top: 11.3rem;
+  margin-left: 10.2rem;
+}
